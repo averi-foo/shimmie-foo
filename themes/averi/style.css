@@ -228,8 +228,8 @@ TABLE.form.image_info {
 	width: auto;
 }
 
-#Statsmain.blockbody {
-	padding-bottom: 10px;
+#Statsmain .blockbody {
+	padding-bottom: 15px;
 }
 
 .avatar-container {
