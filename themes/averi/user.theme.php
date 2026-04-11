@@ -6,7 +6,7 @@ namespace Shimmie2;
 
 use function MicroHTML\{A, SMALL, TABLE, TR, TD, LABEL, INPUT};
 
-class AveriUserTheme extends Themelet 
+class AveriUserTheme extends UserPageTheme 
 {
 	public function display_login_page(): void
 	{
