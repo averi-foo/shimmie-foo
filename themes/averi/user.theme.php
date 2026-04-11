@@ -13,7 +13,6 @@ class AveriUserPageTheme extends UserPageTheme
 	public function display_login_page(): void
 	{
 		Ctx::$page->set_title("Login"); // Set page title
-		Ctx::$page->set_layout("no-left"); // Removes the left sidebar so login takes up the full page
 		
 		$html = SHM_SIMPLE_FORM(make_link("user_admin/login"),
 			TABLE(["summary" => "Login Form"],
@@ -53,20 +52,11 @@ class AveriUserPageTheme extends UserPageTheme
 	 */
 	public function display_user_block(User $user, array $parts): void
 	{
-		$html = [];
-		$blocked = ["Pools", "Pool Changes", "Alias Editor", "My Profile"];
-		foreach ($parts as $part) {
-			if (in_array($part["name"], $blocked)) {
-				continue;
-			}
-			$html[] = A(["href" => $part["link"], "class" => "tab"], $part["name"]);
-		}
-		Ctx::$page->add_block(new Block("User Links", joinHTML(" ", $html), "user", 90, is_content: false));
+		parent::display_user_block($user, $parts);
 	}
 	
 	public function display_signup_page(): void
 	{
-		Ctx::$page->set_layout("no-left");
 		parent::display_signup_page();
 	}
 	
@@ -75,7 +65,6 @@ class AveriUserPageTheme extends UserPageTheme
 	 */
 	public function display_user_page(User $duser, array $stats): void
 	{
-		Ctx::$page->set_layout("no-left");
 		parent::display_user_page($duser, $stats);
 	}
 	 }
