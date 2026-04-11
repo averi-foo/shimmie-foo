@@ -1,2 +1,3 @@
 #!/bin/bash
-ln -s "$(pwd)/themes/averi" ../shimmie2/themes/averi
+ln -sf "$(pwd)/themes/averi" ../shimmie2/themes/averi
+ln -sf "$(pwd)/extensions/permissioned-biography" ../shimmie2/ext/permissioned-biography
