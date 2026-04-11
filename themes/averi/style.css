@@ -224,6 +224,14 @@ TABLE.tag_list>TBODY>TR>TD:after {
 	text-align: center;
 }
 
+TABLE.image_info.form {
+	width: 80%;
+}
+
+TABLE.image_info.infomode-view {
+	width: auto;
+}
+
 #Statsmain .blockbody {
 	padding-bottom: 15px;
 }
