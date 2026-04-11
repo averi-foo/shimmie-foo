@@ -48,6 +48,9 @@ INPUT, TEXTAREA, SELECT, BUTTON {
 	background: var(--input-background);
 	border-color: var(--input-borders);
 	border-radius: 5px;
+	border-width: 1px;
+	margin-bottom: 2px;
+	color: black;
 }
 
 H1, H2, H3 {
