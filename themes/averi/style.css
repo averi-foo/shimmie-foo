@@ -10,6 +10,10 @@
 	--title-color: #ad203f;
 	--title-border: #AAA;
 	
+	--input-borders: #623d2a;
+	--input-color: #2a1a12;
+	--input-background: #fff5e6;
+	
 	--header: #ffe5b9;
 	--header-border: #BBB;
 	
@@ -37,6 +41,13 @@
 
 * {
 	box-sizing: border-box;
+}
+
+
+INPUT, TEXTAREA, SELECT, BUTTON {
+	background: var(--input-background);
+	border-color: var(--input-borders);
+	border-radius: 5px;
 }
 
 H1, H2, H3 {
