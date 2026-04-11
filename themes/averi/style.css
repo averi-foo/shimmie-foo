@@ -235,13 +235,12 @@ TABLE.form.image_info {
 .avatar-container {
 	position: absolute;
 	right: 20px;
-	display: flex;
+	display: inline-flex;
 }
 
 .avatar-editor .avatar-container {
 	position: relative;
 	right: 0px;
-	display: contents;
 }
 
 #paginator {
