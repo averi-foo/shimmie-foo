@@ -30,42 +30,6 @@ class AveriUserPageTheme extends UserPageTheme
 		// no block in this theme
 	}
 	
-	public function create_login_block(): HTMLElement
-	{
-		$captcha = Captcha::get_html(UserAccountsPermission::SKIP_LOGIN_CAPTCHA);
-		
-		$form = SHM_SIMPLE_FORM(
-			make_link("user_admin/login"),
-			TABLE(["style" => "width: 50%", "class" => "form"],
-			TBODY(
-			TR(
-				TH(LABEL(["for" => "user"], "Name")),
-				TD(INPUT(["id" => "user", "type" => "text", "name" => "user", "autocomplete" => "username", "required" => true]))
-			),
-		   TR(
-				TH(LABEL(["for" => "pass"], "Password")),
-				TD(INPUT(["id" => "pass", "type" => "password", "name" => "pass", "autocomplete" => "current-password", "required" => true]))
-		   ),
-		   $captcha ? TR(
-			   TH(LABEL(["for" => "captcha"], "Captcha")),
-				TD($captcha)
-		   ) : null
-			),
-			  TFOOT(
-				  TR(TD(["colspan" => "2"], INPUT(["type" => "submit", "value" => "Log In"])))
-			  )
-			)
-		);
-		
-		$html = emptyHTML();
-		$html->appendChild($form);
-		if (Ctx::$config->get(UserAccountsConfig::SIGNUP_ENABLED) && Ctx::$user->can(UserAccountsPermission::CREATE_USER)) {
-			$html->appendChild(SMALL(A(["href" => make_link("user_admin/create")], "Create Account")));
-		}
-		
-		return $html;
-	}
-	
 	/**
 	 * @param array<array{name: string|HTMLElement, link: Url}> $parts
 	 */
