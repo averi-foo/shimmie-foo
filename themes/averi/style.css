@@ -228,6 +228,13 @@ TABLE.form.image_info {
 	width: auto;
 }
 
+.avatar-container {
+	position: fixed;
+	right: 20px;
+	top: 105px;
+	
+}
+
 #paginator {
 position: fixed;
 left:0;
