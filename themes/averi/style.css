@@ -56,7 +56,7 @@ INPUT, TEXTAREA, SELECT, BUTTON {
 
 H1, H2, H3 {
 	margin: 0;
-	text-align: center;
+	text-align: left;
 	/* not sure why top-padding appears visually larger than other padding in headers...
 	 r*educing top-padding to compensate */
 	padding: calc(var(--block-padding) * 0.5) var(--block-padding) var(--block-padding) var(--block-padding);
@@ -134,7 +134,7 @@ THEAD {
 }
 TD {
 	vertical-align: top;
-	text-align: center;
+	text-align: left;
 }
 
 TABLE.zebra {border-spacing: 0; border: 2px solid var(--zebra-border);}
@@ -178,11 +178,11 @@ CODE {
 NAV {
 	grid-column: 1;
 	grid-row: 2;
-	text-align: center;
+	text-align: left;
 }
 NAV .blockbody {
 	font-size: 0.85rem;
-	text-align: center;
+	text-align: left;
 	overflow: hidden;
 }
 NAV TABLE {
@@ -240,7 +240,7 @@ border: none;
 ARTICLE {
 	grid-column: 2;
 	grid-row: 2;
-	text-align: center;
+	text-align: left;
 }
 ARTICLE TABLE {
 	width: 90%;
@@ -277,7 +277,7 @@ ARTICLE TABLE {
 	margin: 0;
 	}
 	.shm-image-list {
-		justify-content: center;
+		justify-content: left;
 	}
 }
 
