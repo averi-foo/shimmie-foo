@@ -224,6 +224,10 @@ TABLE.tag_list>TBODY>TR>TD:after {
 	text-align: center;
 }
 
+image_info form infomode-view {
+	width: 80%
+}
+
 TABLE.form.image_info {
 	width: auto;
 }
