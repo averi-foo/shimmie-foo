@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s ./themes/averi/ ../shimmie2/themes/averi/
+ln -s ./themes/averi ../shimmie2/themes/averi
