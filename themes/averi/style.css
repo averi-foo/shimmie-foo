@@ -228,11 +228,13 @@ TABLE.form.image_info {
 	width: auto;
 }
 
+#Statsmain.blockbody {
+	padding-bottom: 10px;
+}
+
 .avatar-container {
-	position: fixed;
+	position: absolute;
 	right: 20px;
-	top: 105px;
-	
 }
 
 #paginator {
