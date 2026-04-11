@@ -13,22 +13,8 @@ class AveriUserPageTheme extends UserPageTheme
 	public function display_login_page(): void
 	{
 		Ctx::$page->set_title("Login"); // Set page title
-		
-		$html = SHM_SIMPLE_FORM(make_link("user_admin/login"),
-			TABLE(["summary" => "Login Form"],
-				TR(
-					TD(["width" => "70"], LABEL(["for" => "user"], "Name")),
-					TD(["width" => "70"], INPUT(["type" => "text", "name" => "user", "id" => "user"]))
-				),
-				TR(
-					TD(LABEL(["for" => "pass"], "Password")),
-					TD(INPUT(["type" => "password", "name" => "pass", "id" => "pass"]))
-				),
-				TR(
-					TD(["colspan" => "2"], SHM_SUBMIT("Log In"))
-				)
-			)
-		);
+		$this->display_navigation(); // Display navbar on left
+		$html = $this->create_login_block();
 		if (Ctx::$config->get(UserAccountsConfig::SIGNUP_ENABLED)) {
 			$html->appendChild(SMALL(A(["href" => make_link("user_admin/create")], "Create Account")));
 		}
