@@ -3,8 +3,9 @@
 	
 	--page: #fff0d3; /* background colour */
 	--text: #424242;
-	--link-default: #4646FF;
-	--link-visited: #813893;
+	--link-default: #05563e;
+	--link-hover: #0aae7d;
+	--link-visited: #05563e;
 	
 	--title: #ffe5b9;
 	--title-color: #ad203f;
@@ -65,6 +66,7 @@ BODY {
 	background: var(--page);
 	color: var(--text);
 	margin: 1rem;
+	padding-bottom: 50px;
 }
 BODY.layout-grid {
 	display: grid;
@@ -154,6 +156,7 @@ A {
 }
 A:hover {
 	text-decoration: underline;
+	color: var(--link-hover);
 }
 A:visited {
 	color: var(--link-visited);
@@ -218,6 +221,11 @@ TABLE.tag_list>TBODY>TR>TD:after {
 }
 
 #paginator {
+position: fixed;
+left:0;
+bottom:0;
+width:100%;
+margin-bottom:50px;
 box-shadow: none;
 }
 #paginator .blockbody {
