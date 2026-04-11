@@ -237,6 +237,11 @@ TABLE.form.image_info {
 	right: 20px;
 }
 
+.avatar-editor .avatar-container {
+	position: relative;
+	right: 0px;
+}
+
 #paginator {
 position: fixed;
 left:0;
