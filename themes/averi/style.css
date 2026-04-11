@@ -220,6 +220,14 @@ TABLE.tag_list>TBODY>TR>TD:after {
 	content: ")";
 }
 
+#handle_image_media {
+	text-align: center;
+}
+
+TABLE.form.image_info {
+	width: auto;
+}
+
 #paginator {
 position: fixed;
 left:0;
