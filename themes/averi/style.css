@@ -227,6 +227,7 @@ bottom:0;
 width:100%;
 margin-bottom:50px;
 box-shadow: none;
+text-align: center;
 }
 #paginator .blockbody {
 background: none;
@@ -241,10 +242,6 @@ ARTICLE {
 	grid-column: 2;
 	grid-row: 2;
 	text-align: left;
-}
-ARTICLE TABLE {
-	width: 90%;
-	margin: auto;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
