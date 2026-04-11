@@ -32,7 +32,7 @@ final class UserBiosPermissions extends Extension
 		}
 	}
 	
-	#[EventListener(priority: 0)]
+	#[EventListener(priority: -10)]
 	public function onPageRequest(PageRequestEvent $event): void
 	{
 		if ($event->page_matches("user/{name}/biography", method: "POST")) {
