@@ -6,6 +6,8 @@ namespace Shimmie2;
 
 final class UserBiosPermissions extends Extension
 {
+	public const KEY = "user_bios_permissions";
+	
 	public const EDIT_OWN_BIO = "edit_own_bio";
 	
 	/**
@@ -32,7 +34,7 @@ final class UserBiosPermissions extends Extension
 		}
 	}
 	
-	#[EventListener(priority: -10)]
+	#[EventListener(priority: 5)]
 	public function onPageRequest(PageRequestEvent $event): void
 	{
 		if ($event->page_matches("user/{name}/biography", method: "POST")) {
