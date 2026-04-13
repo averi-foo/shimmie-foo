@@ -251,6 +251,11 @@ TABLE.image_info.infomode-view {
 	right: 0px;
 }
 
+.comment .info .avatar-container {
+	position: relative;
+	right: 0px;
+}
+
 #paginator {
 position: fixed;
 left:0;
