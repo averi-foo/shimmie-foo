@@ -17,8 +17,8 @@
 	--input-background-disabled: #dbc8ac;
 	--input-background-hover: #fff;
 	
-	--thumb-width: 256px;
-	--thumb-height: 256px;
+	--thumb-width: 256px !important;
+	--thumb-height: 256px !important;
 	
 	--avatar-border: #ffd17a;
 	
