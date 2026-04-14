@@ -255,6 +255,10 @@ TABLE.image_info.infomode-view {
 	border: 8px var(--avatar-border);
 }
 
+.avatar-container IMG {
+	object-fit: cover;
+}
+
 .avatar-editor .avatar-container {
 	position: relative;
 	right: 0px;
