@@ -14,6 +14,8 @@
 	--input-borders: #623d2a;
 	--input-color: #2a1a12;
 	--input-background: #fff5e6;
+	--input-background-disabled: #dbc8ac;
+	--input-background-hover: #fff;
 	
 	--avatar-border: #ffd17a;
 	
@@ -54,6 +56,13 @@ INPUT, TEXTAREA, SELECT, BUTTON {
 	border-width: 1px;
 	margin-bottom: 2px;
 	color: black;
+}
+
+INPUT:disabled {
+	background: var(--input-background-disabled)
+}
+INPUT:hover {
+	background: var(--input-background-hover)
 }
 
 H1, H2, H3 {
