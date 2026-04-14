@@ -17,6 +17,9 @@
 	--input-background-disabled: #dbc8ac;
 	--input-background-hover: #fff;
 	
+	--thumb-width: 256px;
+	--thumb-height: 256px;
+	
 	--avatar-border: #ffd17a;
 	
 	--header: #ffe5b9;
@@ -356,4 +359,6 @@ margin-top: 32px;
 	border: 1px solid var(--block-border);
 	background: var(--block);
 	box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+	max-width: var(--thumb-width);
+	height: auto;
 }
